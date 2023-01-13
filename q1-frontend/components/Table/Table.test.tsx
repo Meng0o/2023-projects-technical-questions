@@ -5,10 +5,10 @@ describe('(Component) Table', () => {
   it('should be able to add a new element', () => {
     const { getByRole, getAllByTestId, getByTestId } = render(<Table />);
     const numRows = getAllByTestId('row').length;
-
     const alertInput = getByRole('textbox');
     fireEvent.input(alertInput, {target: {value: 'new Alert'}})
     fireEvent.submit(getByTestId('form'))
+    console.log(getAllByTestId('row').length)
     expect(getAllByTestId('row').length).toEqual(numRows + 1);
   });
 

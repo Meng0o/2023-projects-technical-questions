@@ -51,7 +51,7 @@ export default function Table() {
     ]
   });
 
-
+  console.log(contents)
 
   return (
     <>
