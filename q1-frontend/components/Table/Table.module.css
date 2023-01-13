@@ -17,4 +17,12 @@
     display: flex;
     flex: 1 1 0px;
     flex-direction: column;
+    text-align: left;
+}
+
+.date {
+    text-align: right;
+    color: blue;
+    font-size: 12px;
+    padding: 8px;
 }
